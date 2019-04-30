@@ -27,6 +27,7 @@ return drivers.reduce(function(total,el){
   return total + el.revenue
 },0)
 }
+// when we average we need to do that math after reduce closes and returns a value !!
 const averageRevenue = function(drivers){
 return   totalRevenue(drivers) /drivers.length
 }
